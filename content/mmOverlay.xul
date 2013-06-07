@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<overlay id="mmbookmarksBrowserOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://mmbookmarks/content/mmOverlay.js"/>
+  <script type="application/x-javascript" src="chrome://mmbookmarks/content/mmSettings.js"/>
+  <script type="application/x-javascript" src="chrome://mmbookmarks/content/mmJson.js"/>
+  <script type="application/x-javascript" src="chrome://mmbookmarks/content/mmControl.js"/>
+  <script type="application/x-javascript" src="chrome://mmbookmarks/content/mmSynchronizer.js"/>
+  <script type="application/x-javascript" src="chrome://mmbookmarks/content/prefObserverTimerActive.js"/>
+  <script type="application/x-javascript" src="chrome://mmbookmarks/content/observerBookmarks.js"/>
+</overlay>
+<!-- vim: set ai tabstop=2 shiftwidth=2 expandtab: -->

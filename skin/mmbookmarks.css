@@ -1,0 +1,50 @@
+/* dirty elements */
+
+textbox[dirty="true"],
+radiogroup[dirty="true"] > radio > * > label,
+checkbox[dirty="true"] > * > label
+{
+	color:red;
+}
+
+
+/*
+textbox.noframe,
+textbox.noframe > .textbox-internal-box,
+textbox.noframe > .textarea-internal-box
+{
+  background: transparent !important;
+  border: none;
+  padding: 0px;
+  -moz-appearance: none;
+}
+*/
+
+textbox.multilineinput
+{
+  font-size:small;
+}
+
+tabpanel>*>label
+{
+  padding-top:2px;
+}
+
+.mm-bookmarks-about-box {
+  background-color: white;
+}
+
+.mm-bookmarks-mm-logo {
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.mm-bookmarks-about-text {
+  margin-top: 27px;
+}
+
+.mm-bookmarks-about-ltd {
+  margin-top: 0.1em;
+  font-size: large;
+}

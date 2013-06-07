@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+  <!-- list all the packages being supplied by this directory -->
+  <RDF:Seq about="urn:mozilla:package:root">
+    <RDF:li resource="urn:mozilla:package:mmbookmarks"/>
+  </RDF:Seq>
+
+  <!-- package information -->
+  <RDF:Description about="urn:mozilla:package:mmbookmarks"
+        chrome:name="mmbookmarks"
+        chrome:extension="true">
+  </RDF:Description>
+
+  <!-- overlay information -->
+  <RDF:Seq about="urn:mozilla:overlays">
+    <RDF:li resource="chrome://browser/content/browser.xul"/>
+  </RDF:Seq>
+
+  <RDF:Seq about="chrome://browser/content/browser.xul">
+    <RDF:li>chrome://mmbookmarks/content/mmOverlay.xul</RDF:li>
+  </RDF:Seq>
+<!-- vim: set ai tabstop=2 shiftwidth=2 expandtab: -->
+</RDF:RDF>

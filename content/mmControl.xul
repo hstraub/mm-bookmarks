@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!-- vim: set ai tabstop=2 shiftwidth=2 expandtab: -->
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/tabbox.css" type="text/css"?>
+<?xml-stylesheet href="chrome://mmbookmarks/skin/" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://mmbookmarks/locale/mmbookmarks.dtd">
+
+<dialog
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    id="mmControl-window"
+    title="&mmcontrolwindow.title;"
+    onload="onLoad()"
+    orient="vertical"
+    ondialogaccept="endeaus(); return true;"
+    buttons="extra1,accept,cancel"
+    buttonlabelextra1="&mmcontrolwindow.label.help;"
+    ondialogextra1="mmHelp();"
+    persist="screenX screenY"
+    >
+    <script src="chrome://mmbookmarks/content/mmJson.js"/>
+    <script src="chrome://mmbookmarks/content/mmControl.js"/>
+    <script src="chrome://mmbookmarks/content/mmSettings.js"/>
+    <script src="chrome://mmbookmarks/content/mmSynchronizer.js"/>
+    <script src="chrome://global/content/globalOverlay.js"/>
+    <tabbox>
+      <tabs id="mm-status-tabs" onselect="tab_selection_changed();">
+        <tab label="&mmcontrolwindow.tabs.account.label;" />
+        <tab label="&mmcontrolwindow.tabs.status.label;" />
+        <tab label="&mmcontrolwindow.tabs.logs.label;" />
+        <tab label="&mmcontrolwindow.tabs.options.label;" />
+        <tab label="&mmcontrolwindow.tabs.about.label;" />
+      </tabs>
+      <tabpanels id="mm-status-panels">
+        <tabpanel orient="vertical">
+          <vbox>
+            <groupbox>
+              <caption label="&mmcontrolwindow.label.security;"/>
+              <vbox>
+                <label control="mm-username" value="&mmcontrolwindow.label.username;"/>
+                <textbox id="mm-username" commandupdater="true" events="focus"
+                  oncommandupdate="goUpdateCommand('cmd_test()');" 
+                  oninput="credentials_changed();"/>
+                <label control="mm-password" value="&mmcontrolwindow.label.password;"/>
+                <textbox id="mm-password" type="password"
+                  oninput="credentials_changed();"/>
+                <hbox>
+                  <button id="mm-clear-user-and-pass" label="&mmcontrolwindow.tags.account.clear.label;"
+                    disabled="false" oncommand="clear_user_and_password();" />
+                  <button id="mm-save-user-and-pass" label="&mmcontrolwindow.tags.account.save.label;"
+                    disabled="true" oncommand="save_user_and_password();" />
+                </hbox>
+              </vbox>
+            </groupbox>
+          </vbox>
+        </tabpanel>
+        <tabpanel orient="vertical">
+          <groupbox>
+            <caption label="&mmcontrolwindow.label.synchronization;"/>
+            <textbox id="mm-bookmark-status" readonly="true" value="&mmcontrolwindow.tabs.status.unknown;" />
+          </groupbox>
+          <groupbox>
+            <caption label="&mmcontrolwindow.tabs.status.captionsynchronize;" />
+            <button id="mm-synchronize-button" label="&mmcontrolwindow.tabs.status.synchronizebutton;" disabled="false" oncommand="synchronizeNow();" />
+          </groupbox>
+          <groupbox>
+            <caption label="&mmcontrolwindow.tabs.status.captiononlinebookmarks;" />
+            <button id="mm-online-bookmark-button" label="&mmcontrolwindow.tabs.status.onlinebookmarkbutton;" oncommand="onlineBookmarks();" />
+          </groupbox>
+        </tabpanel>
+        <tabpanel orient="vertical">
+          <listbox id="loglist">
+            <listcols>
+              <listcol flex="1" />
+              <listcol flex="2" />
+              <listcol flex="1" />
+            </listcols>
+            <listhead>
+              <listheader width="20%" label="Nr" tooltiptext="Datenbank Serien Nummer" />
+              <listheader width="40%" label="Zeit" tooltiptext="Zeitstempel der Einspeicherung" />
+              <listheader width="30%" label="Göße" tooltiptext="Datenmenge" />
+            </listhead>
+          </listbox>
+        </tabpanel>
+        <tabpanel>
+          <groupbox flex="1">
+            <caption label="&mmcontrolwindow.tabs.status.onlinebookmarkbutton;" />
+            <vbox>
+              <checkbox id="autosync" disabled="true" label="&mmcontrolwindow.tabs.options.synchronization.label;" />
+              <checkbox id="autodownload" disabled="true" label="&mmcontrolwindow.tabs.options.autodownload.label;" />
+              <checkbox id="autoupload" disabled="true" label="&mmcontrolwindow.tabs.options.autoshutdown.label;" />
+            </vbox>
+          </groupbox>
+        </tabpanel>
+        <tabpanel>
+          <groupbox class="mm-bookmarks-about-box">
+            <vbox>
+              <image class="mm-bookmarks-mm-logo" src="chrome://mmbookmarks/skin/mm_logo.png" />
+              <label class="mm-bookmarks-about-text" value="&mmcontrolwindow.tabs.about.text.label;" />
+              <label class="mm-bookmarks-about-ltd" value="&mmcontrolwindow.tabs.about.ltd.label;" />
+              <label id="mm-bookmarks-version-name" />
+            </vbox>
+          </groupbox>
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+</dialog>

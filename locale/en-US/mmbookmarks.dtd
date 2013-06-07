@@ -1,0 +1,102 @@
+<!ENTITY settings.title      "MobilMail Bookmarks">
+<!ENTITY upload.title        "Upload Bookmarks">
+<!ENTITY download.title      "Download Bookmarks">
+
+<!-- mmOverlay -->
+<!ENTITY mmoverlaywindow.title "MobilMail Bookmarks">
+
+<!-- mmControl -->
+<!ENTITY mmcontrolwindow.title "MobilMail Bookmarks">
+<!ENTITY mmcontrolwindow.label.security "Security">
+<!ENTITY mmcontrolwindow.label.username "Username:">
+<!ENTITY mmcontrolwindow.label.password "Password">
+<!ENTITY mmcontrolwindow.label.synchronization "Synchronization">
+<!ENTITY mmcontrolwindow.label.upload "Upload">
+<!ENTITY mmcontrolwindow.label.download "Download">
+<!ENTITY mmcontrolwindow.label.options "Setup">
+<!ENTITY mmcontrolwindow.label.help "Help">
+
+<!ENTITY mmcontrolwindow.tabs.account.label "Account">
+<!ENTITY mmcontrolwindow.tabs.status.label "Status">
+<!ENTITY mmcontrolwindow.tabs.logs.label "Log">
+<!ENTITY mmcontrolwindow.tabs.options.label "Options">
+<!ENTITY mmcontrolwindow.tabs.about.label "About">
+
+<!ENTITY mmcontrolwindow.tags.account.clear.label "Clear">
+<!ENTITY mmcontrolwindow.tags.account.save.label "Save">
+
+<!ENTITY mmcontrolwindow.tabs.status.unknown "unknown...">
+<!ENTITY mmcontrolwindow.tabs.status.captionsynchronize "Synchronize now">
+<!ENTITY mmcontrolwindow.tabs.status.synchronizebutton "Manual synchronize">
+<!ENTITY mmcontrolwindow.tabs.status.captiononlinebookmarks "Online Bookmarks">
+<!ENTITY mmcontrolwindow.tabs.status.onlinebookmarkbutton "View Online Bookmarks">
+
+<!ENTITY mmcontrolwindow.tabs.options.captionoptions "Options">
+<!ENTITY mmcontrolwindow.tabs.options.synchronization.label   "Automatic sychnronization (every 5 minutes)">
+<!ENTITY mmcontrolwindow.tabs.options.autodownload.label  "Automatic download after startup">
+<!ENTITY mmcontrolwindow.tabs.options.autoshutdown.label  "Automaitc upload before shutodnw">
+
+<!ENTITY mmcontrolwindow.tabs.about.text.label "This is a service of">
+<!ENTITY mmcontrolwindow.tabs.about.ltd.label "MobilMail Ltd.">
+
+<!-- FIXME Straub: remove this section ? -->
+<!-- mmOptions -->
+<!ENTITY synchronization.label   "Automatic sychnronization">
+<!ENTITY autodownload.label  "Automatic download after startup">
+<!ENTITY autoshutdown.label  "Automaitc upload before shutodnw">
+
+<!-- Check It -->
+<!ENTITY ftpsettings.label   "Remote File Settings">
+<!ENTITY localsettings.label "Local Bookmark Folder">
+<!ENTITY user.label          "User: ">
+<!ENTITY password.label      "Password: ">
+<!ENTITY host.label          "Host: ">
+<!ENTITY path.label          "Path: ">
+<!ENTITY encoding.label      "Encoding:">
+<!ENTITY encoding.accesskey  "E">
+<!ENTITY tags.label          "Style Tags:">
+<!ENTITY tags.accesskey      "T:">
+
+<!ENTITY dirtycheck.label    "Cancel uploading if the folder has not been modified.">
+<!ENTITY mergecontents.label "Merge new data into current bookmarks.">
+<!ENTITY autoupload.label    "Auto upload on exit.">
+<!ENTITY autodownload.label  "Auto download on startup.">
+
+<!ENTITY publicid.label      "Check the XBEL Formal Public Identifier.">
+<!ENTITY favicon.label       "Synchronize Favicon.">
+<!ENTITY livemark.label      "Synchronize Livemark.">
+<!ENTITY keyword.label       "Synchronize Keyword.">
+<!ENTITY webpanel.label      "Synchronize Webpanel.">
+
+<!ENTITY browse.label        "Browse...">
+<!ENTITY browse.accesskey    "B">
+
+<!ENTITY browsercount.label  "Browser count: ">
+<!ENTITY resetcount.tooltip	 "Click if the browser count is different from the number of Firefox windows you have open (close all except one first).">
+<!ENTITY resetcount.label	 "Reset Browser Count">
+<!ENTITY sort.label			 "Sort">
+<!ENTITY download.label      "Download">
+<!ENTITY upload.label        "Upload">
+
+<!ENTITY importxbel.label    "Import XBEL">
+<!ENTITY exportxbel.label    "Export XBEL">
+<!ENTITY exporthtml.label    "Export HTML 4.0">
+<!ENTITY undo.label          "Undo">
+<!ENTITY undo.accesskey      "U">
+<!ENTITY redo.label          "Redo">
+<!ENTITY redo.accesskey      "R">
+
+<!ENTITY basic.label         "Basic">
+<!ENTITY advanced.label      "Advanced">
+<!ENTITY xbel.label          "XBEL">
+<!ENTITY downloadurl.label   "Download URL">
+<!ENTITY session.label       "Session">
+<!ENTITY sessioncheck.label  "Enable Undo/Redo">
+<!ENTITY clear.label         "Clear Undo/Redo History">
+<!ENTITY clear.accesskey     "C">
+
+
+<!ENTITY apply.label         "Apply (Ctrl + S)">
+<!ENTITY apply.key           "s">
+<!ENTITY apply.accesskey     "A">
+<!ENTITY cancel.label        "Cancel">

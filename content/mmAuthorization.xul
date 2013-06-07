@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<dialog
+    id="mmAuthorization-window"
+    title="Authorization"
+    orient="vertical"
+    ondialogaccept="endeaus();return true;"
+    buttons="accept,cancel"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script src="chrome://mmbookmarks/content/mmAuthorization.js"/>
+<vbox>
+<description>Eingabe von Username und Password</description>
+<label control="mm-username1" value="Username: "/>
+<textbox id="mm-username"/>
+<label control="mm-password" value="Password: "/>
+<textbox id="mm-password"/>
+<checkbox id="mm-remember-password" label="Use Password Manager to remember this password."/>
+</vbox>
+<hbox>
+<spacer flex="2"/>
+<!--
+<button label="Cancel" oncommand="window.close()"/>
+<button label="OK" oncommand="endeaus();window.close()"/>
+-->
+</hbox>
+</dialog>
+<!-- vim: set ai tabstop=2 shiftwidth=2 expandtab: -->

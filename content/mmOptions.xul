@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/tabbox.css" type="text/css"?>
+<?xml-stylesheet href="chrome://mmbookmarks/skin/" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://mmbookmarks/locale/mmbookmarks.dtd">
+
+<dialog
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      title="&settings.title;"
+      id="mmbookmark-settings"
+      orient="vertical"
+      flex="0"
+      onload="onLoad()"
+      ondialogaccept="return true;"
+      buttons="accept,cancel"
+      persist="screenX screenY"
+      >
+     <script type="application/x-javascript" src="chrome://mmbookmarks/content/mmOptions.js"/>
+     <tabpanel orient="vertical">
+      	<checkbox id="synchronization" label="&synchronization.label;" />
+        <checkbox id="autodownload" label="&autodownload.label;" />
+        <checkbox id="autoupload" label="&autoupload.label;" />
+      </tabpanel>
+</dialog>
+<!-- vim: set ai tabstop=2 shiftwidth=2 expandtab: -->

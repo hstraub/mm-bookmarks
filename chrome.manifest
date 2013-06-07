@@ -1,0 +1,6 @@
+content	mmbookmarks content/
+resource modules modules/
+overlay	chrome://browser/content/browser.xul	chrome://mmbookmarks/content/mmOverlay.xul
+locale	mmbookmarks	en-US	locale/en-US/
+locale	mmbookmarks	de-AT	locale/de-AT/
+skin	mmbookmarks	classic/1.0	skin/
